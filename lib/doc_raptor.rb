@@ -20,7 +20,7 @@ class DocRaptor
     self.create(options.merge({:raise_exception_on_failure => true}))
   end
 
-  # when given a block, hands the block a TempFile of the resulting document
+  # when given a block, hands the block a Tempfile of the resulting document
   # otherwise, just returns the response
   def self.create(options = { })
     raise ArgumentError.new "please pass in an options hash" unless options.is_a? Hash
