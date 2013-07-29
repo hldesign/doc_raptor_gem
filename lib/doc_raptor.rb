@@ -62,6 +62,7 @@ class DocRaptor
     if block_given?
       ret_val = nil
       Tempfile.open("docraptor") do |f|
+        f.binmode
         f.sync = true
         f.write(response.body)
         f.rewind
@@ -131,6 +132,7 @@ class DocRaptor
     if block_given?
       ret_val = nil
       Tempfile.open("docraptor") do |f|
+        f.binmode
         f.sync = true
         f.write(response.body)
         f.rewind
