@@ -1,5 +1,8 @@
 # DocRaptor Gem Changelog
 
+## 0.3.3 - 2013/07/29
+* Fix Encoding::UndefinedConversionError while yielding from .create and
+.download
 ## 0.3.1 - 2012/03/30
 * update the README around async jobs, since it was still talking
   about the gem's behavior in 0.2.x
